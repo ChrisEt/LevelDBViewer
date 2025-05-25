@@ -80,7 +80,7 @@ public class OpenLevelDBDialog extends JDialog {
             options.maxOpenFiles(1000);
         }
 
-        options.verifyChecksums(this.verifyChecksumsCheckBox.isSelected());
+        //options.verifyChecksums(this.verifyChecksumsCheckBox.isSelected());
         options.paranoidChecks(this.paranoidChecksCheckBox.isSelected());
 
         this.viewer.setOptions(options);

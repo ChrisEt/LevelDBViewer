@@ -2,8 +2,8 @@ package com.nukkitx.leveldbviewer.ui;
 
 import com.nukkitx.leveldbviewer.util.LevelDBKey;
 import com.nukkitx.leveldbviewer.util.Utils;
-import com.nukkitx.nbt.NbtUtils;
-import com.nukkitx.nbt.stream.NBTInputStream;
+import org.cloudburstmc.nbt.NbtUtils;
+import org.cloudburstmc.nbt.NBTInputStream;
 import com.nukkitx.leveldbviewer.LevelDBViewer;
 import io.netty.buffer.ByteBufUtil;
 import io.netty.buffer.Unpooled;
@@ -18,10 +18,7 @@ import java.awt.*;
 import java.io.*;
 import java.math.BigInteger;
 import java.nio.charset.StandardCharsets;
-import java.util.ArrayList;
-import java.util.HashSet;
-import java.util.Objects;
-import java.util.StringJoiner;
+import java.util.*;
 
 public class Viewer {
     private JTextField findField;
